@@ -1,6 +1,6 @@
 {
   "name": "@olton/esbuild-plugin-copy",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A esbuild plugin to copy files after build",
   "author": {
     "name": "Serhii Pimenov",
@@ -27,10 +27,11 @@
     "watch": "node watch.js"
   },
   "devDependencies": {
-    "@olton/esbuild-plugin-progress": "^0.3.0",
     "esbuild": "^0.24.0"
   },
   "dependencies": {
-    "glob": "^11.0.0"
+    "chalk": "^5.3.0",
+    "glob": "^11.0.0",
+    "ora": "^8.1.0"
   }
 }
