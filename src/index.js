@@ -1,4 +1,5 @@
 import { mkdirSync, copyFileSync } from "fs";
+import { resolve, basename } from "path";
 import {globSync} from "glob";
 
 const defaults = {
@@ -21,9 +22,9 @@ export default options => {
                     if (dest !== './') mkdirSync(dest, { recursive: true });
 
                     for (const file of files) {
-                        const filename = file.split('/').pop();
+                        const filename = basename(file)
                         if (filename) {
-                            copyFileSync(file, dest + filename);
+                            copyFileSync(resolve(file), dest + filename);
                         }
                     }
                 } catch (error) {
