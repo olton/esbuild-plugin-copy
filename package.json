@@ -1,0 +1,36 @@
+{
+  "name": "@olton/esbuild-plugin-copy",
+  "version": "0.1.0",
+  "description": "A esbuild plugin to copy files after build",
+  "author": {
+    "name": "Serhii Pimenov",
+    "email": "serhii@pimenov.com.ua"
+  },
+  "keywords": [
+    "ESBuild",
+    "ESBuild Plugin",
+    "Copy files",
+    "Copy"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olton/esbuild-plugin-copy.git"
+  },
+  "type": "module",
+  "main": "src/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "watch": "node watch.js"
+  },
+  "devDependencies": {
+    "@olton/esbuild-plugin-progress": "^0.3.0",
+    "esbuild": "^0.24.0"
+  },
+  "dependencies": {
+    "glob": "^11.0.0"
+  }
+}
