@@ -38,7 +38,7 @@ await build({
 - `dest` - destination folder, default `./`
 - `text` - spinner text, default `Copying files...`
 - `spinnerColor` - spinner color, default `cyan`
-- `spinner` - spinner type, default `dots`
+- `spinner` - spinner type, default `dots`, all available spinners you can see [here](https://github.com/sindresorhus/cli-spinners/blob/main/spinners.json)
 - `failText` - fail text, default `Copy failed with %s errors.`
 - `succeedText` - success text, default `Copy process completed in %s ms!`
 
