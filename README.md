@@ -23,11 +23,13 @@ await build({
   entryPoints: ...,
   bundle: true,
   outfile: ...,
-  plugins: [copy({
-      files: ['assets/**/*.jpg'],
-      dest: 'dist/',
-      skip: ['assets/no-copy.jpg'],
-  })],
+  plugins: [
+      copy({
+          files: ['assets/**/*.jpg'],
+          dest: 'dist/',
+          skip: ['assets/no-copy.jpg'],
+      })
+  ],
 });
 ```
 
