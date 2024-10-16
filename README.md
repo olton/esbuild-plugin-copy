@@ -31,6 +31,17 @@ await build({
 });
 ```
 
+## Options
+
+- `files` - files to copy, default `**/*`, can be string or array, you can use a glob pattern
+- `skip` - list files to skip, default `[]`, can be string or array, you can use glob patter
+- `dest` - destination folder, default `./`
+- `text` - spinner text, default `Copying files...`
+- `spinnerColor` - spinner color, default `cyan`
+- `spinner` - spinner type, default `dots`
+- `failText` - fail text, default `Copy failed with %s errors.`
+- `succeedText` - success text, default `Copy process completed in %s ms!`
+
 ---
 
 ## License
